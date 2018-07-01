@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity
+    version="1.0.0.0"
+    processorArchitecture="X86"
+    name="MyCompany.MyLabel.MyAppName"
+    type="win32"
+/>
+<description>MultiMedia BoardCast/Scheduler.</description>
+<dependency>
+    <dependentAssembly>
+        <assemblyIdentity
+            type="win32"
+            name="Microsoft.Windows.Common-Controls"
+            version="6.0.0.0"
+            processorArchitecture="X86"
+            publicKeyToken="6595b64144ccf1df"
+            language="*"
+        />
+    </dependentAssembly>
+</dependency>
+<file name="paramet.dll" hashalg="SHA1"><comClass clsid="{507224A9-6F9F-46A0-8705-06B0E2A007FD}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" description="Fans Object"></comClass><comClass clsid="{72003764-90DF-45CD-80F4-6EC01125CE19}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" description="CentSelect Object"></comClass><comClass clsid="{9B17A020-9BF4-49CE-84AE-F837F5C3D365}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" description="Fan Object"></comClass><comClass clsid="{9FFEC580-C71F-4168-9270-FE183EFCE9B9}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" description="Curve Object"></comClass><comClass clsid="{6CF7C13D-8AEE-4B3C-9CAF-1950B8649738}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" description="Spectrum Object"></comClass><comClass clsid="{8984DA06-1711-4019-86CA-46E63E1717F4}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" description="Drive Object"></comClass><comClass clsid="{3BC2E711-2A4A-45E4-B351-490B92B7F028}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" description="Drives Object"></comClass><comClass clsid="{126D2D73-7A5D-414E-AA58-336387C31252}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" description="DriveInfo Object"></comClass><typelib tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" resourceid="1" version="1.0" helpdir="" flags="HASDISKIMAGE"></typelib></file><comInterfaceExternalProxyStub name="IFans" iid="{2862A43B-56C8-4B1D-AA6B-5BFD64F8A6BA}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub><comInterfaceExternalProxyStub name="ICentSelect" iid="{07CC2C23-BF0A-4BC4-BD3E-331C7F3ACC13}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub><comInterfaceExternalProxyStub name="IFan" iid="{6E9DCC84-E665-4F8E-8EFE-21BB134ACD4A}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub><comInterfaceExternalProxyStub name="ICurve" iid="{B695BFED-08D3-4E7C-8113-964EB367738C}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub><comInterfaceExternalProxyStub name="ISpectrum" iid="{1ACD95B4-0037-41DC-BA3B-9D048B0AF7B3}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub><comInterfaceExternalProxyStub name="IDrive" iid="{EF41C783-AD89-45DE-B21E-5B36E2CB84D7}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub><comInterfaceExternalProxyStub name="IDrives" iid="{A92CE544-AD6D-4A8A-A8E1-087F7C993548}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub><comInterfaceExternalProxyStub name="IDriveInfo" iid="{E106870A-A9CA-4244-A422-E72D077403A4}" tlbid="{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"></comInterfaceExternalProxyStub>
+</assembly>
+

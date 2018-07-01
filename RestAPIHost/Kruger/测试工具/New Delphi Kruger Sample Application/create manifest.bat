@@ -1,0 +1,1 @@
+mt.exe -tlb:paramet.dll -dll:paramet.dll -out:paramet.dll.manifest
