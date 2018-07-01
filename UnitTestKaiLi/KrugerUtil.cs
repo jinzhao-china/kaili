@@ -8,6 +8,12 @@ namespace UnitTestKaiLi
     public class UnitTestKrugerUtil
     {
         [TestMethod]
+        public void TestSelectDrives()
+        {
+            KrugerUtil.SelectDrives();
+        }
+
+        [TestMethod]
         public void TestSoundSpectrum()
         {
             KrugerUtil.SoundSpectrum();
