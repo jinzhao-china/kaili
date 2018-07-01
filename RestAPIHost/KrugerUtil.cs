@@ -1,6 +1,7 @@
 ﻿using Kruger;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,8 +41,10 @@ namespace RestAPIHost
             if(driveCount > 0)
             {
                 Drive dr = drs.Items(0);
-               .WriteLine(dr.Deviation);
-
+                Trace.WriteLine(dr.Deviation);
+                Trace.WriteLine(dr.FanPulleySize);
+                Trace.WriteLine(dr.MotorPulleySize);
+                Trace.WriteLine(dr.NumberBelts);
             }
 
         }
@@ -100,10 +103,10 @@ namespace RestAPIHost
             CentSelect cs = new CentSelect();
             Fans fanList = cs.Select(si);
 
-            Console.WriteLine(fanList.Count);
+            Trace.WriteLine(fanList.Count);
 
             Fan f = fanList.Item(2);
-            Console.WriteLine(f.FanDescription);
+            Trace.WriteLine(f.FanDescription);
             return fanList;
         }
     }
