@@ -9,6 +9,27 @@ namespace RestAPIHost
 {
     public class KrugerUtil
     {
+        public static void SoundSpectrum()
+        {
+            Fan f = Select().Item(1);
+            CentSelect cs = new CentSelect();
+            Kruger.Spectrum spectrum = cs.SoundSpectrum(f, 0);
+            Array LpASpectrum = spectrum.Inlet_LpA_Spectrum;
+
+        }
+        public static void CurvePoints()
+        {
+            Fan f = Select().Item(1);
+
+            Kruger.Curve curve;
+            CentSelect cs = new CentSelect();
+            curve = cs.CurvePoints(f, 0);
+
+            Array VolumePoints = curve.VolumePoints;
+            Array PressurePoints = curve.PressurePoints;
+            Array PowerPoints = curve.PowerPoints;
+
+        }
         public static Fans Select()
         {
             SelectInfo si = new SelectInfo();
