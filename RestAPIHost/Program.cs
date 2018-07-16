@@ -8,7 +8,6 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Web.Http.SelfHost;
 
 namespace RestAPIHost
 {

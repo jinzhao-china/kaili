@@ -54,12 +54,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RestAPIHost\RestAPIHost.csproj">
-      <Project>{352925e0-cfe2-4f49-b591-73fe7a93f421}</Project>
-      <Name>RestAPIHost</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <COMReference Include="Kruger">
       <Guid>{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -72,6 +66,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KrugerService\KrugerService.csproj">
+      <Project>{5a5e740d-1b4a-48f9-bb81-e37d80ca2ee2}</Project>
+      <Name>KrugerService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
