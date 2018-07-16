@@ -15,9 +15,9 @@ namespace RestAPIHost
     class Program
     {
         private const string SERVICE_NAME = "REST API Server";
+
         static void Main(string[] args)
         {
-            KrugerUtil.Select();
             //带参启动运行服务
             if (args.Length > 0)
             {
@@ -47,7 +47,7 @@ namespace RestAPIHost
                 pro.StandardInput.AutoFlush = true;
                 pro.StandardInput.WriteLine(cmd);
                 pro.StandardInput.WriteLine("exit");
-                
+
                 pro.WaitForExit();
                 pro.Close();
 
@@ -114,5 +114,26 @@ namespace RestAPIHost
                 }
             }
         }
+
+        //static void Main(string[] args)
+        //{
+        //    Uri _baseAddress = new Uri("http://localhost:60064/");
+        //    HttpSelfHostServer server = null;
+
+        //    HttpSelfHostConfiguration config = new HttpSelfHostConfiguration(_baseAddress);
+
+        //    config.Routes.MapHttpRoute(
+        //        name: "ActionApi",
+        //        routeTemplate: "api/{controller}/{action}/{id}",
+        //        defaults: new { id = RouteParameter.Optional }
+        //    );
+
+
+        //    server = new HttpSelfHostServer(config);
+
+        //    server.OpenAsync().Wait();
+        //    Console.Read();
+        //}
+
     }
 }

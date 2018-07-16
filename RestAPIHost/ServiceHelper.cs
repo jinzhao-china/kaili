@@ -84,7 +84,6 @@ namespace RestAPIHost
                 DisplayName = serviceName,
                 ServiceName = serviceName,
                 Description = "REST API 服务",
-                //ServicesDependedOn = new string[] { "MSSQLSERVER" },//前置服务
                 StartType = ServiceStartMode.Automatic//运行方式
             });
             ti.Context = new InstallContext();

@@ -10,6 +10,8 @@ namespace RestAPIHost
 {
     public class KrugerUtil
     {
+        private static log4net.ILog log = log4net.LogManager.GetLogger(typeof(KrugerUtil));
+
         public static void SelectDrives()
         {
             Fan f = Select().Item(2);
@@ -73,7 +75,11 @@ namespace RestAPIHost
         public static Fans Select()
         {
             SelectInfo si = new SelectInfo();
-            si.RecordDirectory = @".\test\Records\";
+
+            String path = String.Format("{0}\\{1}", System.AppDomain.CurrentDomain.BaseDirectory, "test\\Records\\");
+            log.Debug(path);
+
+            si.RecordDirectory = path;
             si.Volume = 50000;
             si.Pressure = 500;
             si.VolumeUnit = VolumeUnit.vuM3H;
@@ -98,15 +104,17 @@ namespace RestAPIHost
             si.SoundDistanceUnit = DistanceUnit.duM;
             si.TemperatureUnit = TemperatureUnit.DegreeC;
 
-
-
             CentSelect cs = new CentSelect();
             Fans fanList = cs.Select(si);
 
-            Trace.WriteLine(fanList.Count);
+            log.Debug(fanList.Count);
 
-            Fan f = fanList.Item(2);
-            Trace.WriteLine(f.FanDescription);
+            if(fanList.Count > 0)
+            {
+                Fan f = fanList.Item(2);
+                Trace.WriteLine(f.FanDescription);
+            }
+           
             return fanList;
         }
     }
