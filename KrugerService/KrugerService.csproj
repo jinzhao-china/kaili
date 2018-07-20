@@ -65,12 +65,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\CurveModel.cs" />
+    <Compile Include="Models\SpectrumModel.cs" />
     <Compile Include="SelfServer.cs" />
-    <Compile Include="FanModel.cs" />
+    <Compile Include="Models\FanModel.cs" />
     <Compile Include="KrugerController.cs" />
     <Compile Include="KrugerUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SelectInfoModel.cs" />
+    <Compile Include="Models\SelectInfoModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Kruger">

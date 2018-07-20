@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KrugerService
+namespace KrugerService.Models
 {
     public sealed class FanModel
     {

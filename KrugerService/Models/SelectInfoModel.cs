@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KrugerService
+namespace KrugerService.Models
 {
     public sealed class SelectInfoModel
     {
