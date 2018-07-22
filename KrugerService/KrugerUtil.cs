@@ -52,12 +52,12 @@ namespace KrugerService
 
         }
 
-        public static void SoundSpectrum(Fan f)
+        public static Spectrum SoundSpectrum(Fan f)
         {
             CentSelect cs = new CentSelect();
             Kruger.Spectrum spectrum = cs.SoundSpectrum(f, 0);
             Array LpASpectrum = spectrum.Inlet_LpA_Spectrum;
-
+            return spectrum;
         }
 
         public static Spectrum SoundSpectrumEx(Fan f, int speed, bool debug)
@@ -72,10 +72,6 @@ namespace KrugerService
             Curve curve;
             CentSelect cs = new CentSelect();
             curve = cs.CurvePoints(f, speed);
-
-            Array VolumePoints = curve.VolumePoints;
-            Array PressurePoints = curve.PressurePoints;
-            Array PowerPoints = curve.PowerPoints;
 
             return curve;
 
