@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 
 namespace KrugerService
 {
@@ -59,15 +60,18 @@ namespace KrugerService
 
         }
 
-        public static void SoundSpectrumEx(Fan fanItem, int speed, bool debug)
+        public static Spectrum SoundSpectrumEx(Fan f, int speed, bool debug)
         {
+            CentSelect cs = new CentSelect();
+            Kruger.Spectrum spectrum = cs.SoundSpectrumEx(f, speed, debug);
 
+            return spectrum;
         }
-        public static Curve CurvePoints(Fan f)
+        public static Curve CurvePoints(Fan f, int speed)
         {
             Curve curve;
             CentSelect cs = new CentSelect();
-            curve = cs.CurvePoints(f, 0);
+            curve = cs.CurvePoints(f, speed);
 
             Array VolumePoints = curve.VolumePoints;
             Array PressurePoints = curve.PressurePoints;
@@ -78,6 +82,10 @@ namespace KrugerService
         }
         public static Fans Select(SelectInfo si)
         {
+
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            string json = js.Serialize(si);
+            log.Debug(json);
             CentSelect cs = new CentSelect();
             Fans fanList = cs.Select(si);
 

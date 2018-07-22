@@ -69,13 +69,14 @@ namespace UnitTestKaiLi
 
             Assert.AreEqual(1, fanList.Count);
             Fan f = fanList.Item(1);
-            KrugerUtil.CurvePoints(f);
+            KrugerUtil.CurvePoints(f,0);
         }
 
         [TestMethod]
         public void TestSelect()
         {
-            
+         
+
             KrugerUtil.Select(getSelectInfo());
         }
     }

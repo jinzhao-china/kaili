@@ -8,6 +8,7 @@ namespace KrugerService.Models
 {
     public sealed class FanModel
     {
+        public bool Debug { get; set; }
         public float AirVelocity { get; set; }
 
         public float AMCAPressure { get; set; }
@@ -16,7 +17,7 @@ namespace KrugerService.Models
 
         public int BearingLoad { get; set; }
 
-        //public BladeType BladeType { get; set; }
+        public int BladeType { get; set; }
 
         public int DataPoint { get; set; }
 
@@ -114,17 +115,17 @@ namespace KrugerService.Models
 
         public float DrivenPower { get; set; }
 
-        //public Drives Drives { get; }
+        //public int Drives { get; set; }
 
         public float FanArea { get; set; }
 
         public int FanBlades { get; set; }
 
-        //FanClass FanClass { get; set; }
+        public int FanClass { get; set; }
 
-        string FanCode { get; set; }
+        public string FanCode { get; set; }
 
-        string FanDescription { get; set; }
+        public string FanDescription { get; set; }
 
         public int FanIndex { get; set; }
 
@@ -132,7 +133,7 @@ namespace KrugerService.Models
 
         public float FanMotorFLC { get; set; }
 
-        string FanMotorFrame { get; set; }
+        public string FanMotorFrame { get; set; }
 
         public int FanMotorHz { get; set; }
 
@@ -154,11 +155,11 @@ namespace KrugerService.Models
 
         public float FanSpeed { get; set; }
 
-        //FanStyle FanStyle { get; set; }
+        public int FanStyle { get; set; }
 
         public float FanWeight { get; set; }
 
-        //FanWidth FanWidth { get; set; }
+        public int FanWidth { get; set; }
 
         public float ImpellerDiameter { get; set; }
 
@@ -184,13 +185,14 @@ namespace KrugerService.Models
 
         public float PressureFactor { get; set; }
 
-        //Product Product { get; set; }
+        public int Product { get; set; }
 
         public float PwrCondition { get; set; }
 
         public float PwrStandard { get; set; }
+        public int Speed { get; set; }
 
-        //SelectInfo SelectInfo { get; set; }
+        public SelectInfoModel SelectInfo { get; set; }
 
         public float StaticEff { get; set; }
 
