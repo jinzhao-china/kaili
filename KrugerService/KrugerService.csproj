@@ -76,6 +76,12 @@
     <Compile Include="Models\SelectInfoModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
     <COMReference Include="Kruger">
       <Guid>{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -85,9 +91,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

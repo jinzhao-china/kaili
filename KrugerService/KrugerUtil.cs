@@ -79,9 +79,9 @@ namespace KrugerService
         public static Fans Select(SelectInfo si)
         {
 
-            JavaScriptSerializer js = new JavaScriptSerializer();
-            string json = js.Serialize(si);
-            log.Debug(json);
+            //JavaScriptSerializer js = new JavaScriptSerializer();
+            //string json = js.Serialize(si);
+            //log.Debug(json);
             CentSelect cs = new CentSelect();
             Fans fanList = cs.Select(si);
 

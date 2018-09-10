@@ -17,7 +17,7 @@ namespace KrugerService
         private SelectInfo createSelectInfo()
         {
             SelectInfo si = new SelectInfo();
-            String path = String.Format("{0}\\{1}", System.AppDomain.CurrentDomain.BaseDirectory, "test\\Records\\");
+            String path = String.Format("{0}{1}", System.AppDomain.CurrentDomain.BaseDirectory, "test\\Records\\");
 
             si.RecordDirectory = path;
 
@@ -36,7 +36,7 @@ namespace KrugerService
 
             f.SelectInfo = createSelectInfo();
 
-            log.Debug("Path : " + f.SelectInfo.RecordDirectory);
+            log.Debug("Record Path : " + f.SelectInfo.RecordDirectory);
 
             Spectrum stm = KrugerUtil.SoundSpectrumEx(f, model.Speed, model.Debug);
             outModel.Inlet_LPA_Overall = stm.Inlet_LPA_Overall;

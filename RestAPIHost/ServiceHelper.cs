@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Configuration.Install;
+using System.Diagnostics;
+using System.IO;
 using System.Reflection;
 using System.ServiceProcess;
 
@@ -83,7 +85,7 @@ namespace RestAPIHost
             {
                 DisplayName = serviceName,
                 ServiceName = serviceName,
-                Description = "REST API 服务",
+                Description = "REST API FOR AHU",
                 StartType = ServiceStartMode.Automatic//运行方式
             });
             ti.Context = new InstallContext();
@@ -97,5 +99,25 @@ namespace RestAPIHost
                 ti.Uninstall(null);
             }
         }
+
+        public static void RunCMD(String cmd)
+        {
+            Process pro = new Process();
+            pro.StartInfo.FileName = "cmd.exe";
+            pro.StartInfo.UseShellExecute = false;
+            pro.StartInfo.RedirectStandardInput = true;
+            pro.StartInfo.RedirectStandardOutput = true;
+            pro.StartInfo.RedirectStandardError = true;
+            pro.StartInfo.CreateNoWindow = true;
+            pro.Start();
+            pro.StandardInput.AutoFlush = true;
+            pro.StandardInput.WriteLine(cmd);
+            pro.StandardInput.WriteLine("exit");
+
+            pro.WaitForExit();
+            pro.Close();
+        }
+
+       
     }
 }
