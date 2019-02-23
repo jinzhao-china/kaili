@@ -188,17 +188,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="Kruger">
-      <Guid>{9AE7EBC0-70AC-4BD4-B348-DC0392D1D858}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\KrugerService\KrugerService.csproj">
       <Project>{5a5e740d-1b4a-48f9-bb81-e37d80ca2ee2}</Project>
       <Name>KrugerService</Name>

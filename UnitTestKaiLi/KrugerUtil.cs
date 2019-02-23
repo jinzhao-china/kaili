@@ -52,6 +52,19 @@ namespace UnitTestKaiLi
         }
 
         [TestMethod]
+        public void TestGenerateChart()
+        {
+            SelectInfo si = getSelectInfo();
+            Fans fanList = KrugerUtil.Select(si);
+
+            String outputPath = @".\pic\tmp.jpg";
+            int width = 350;
+            int height = 350;
+            Fan f = fanList.Item(1);
+            KrugerUtil.GenerateChart(f, outputPath, width, height, Kruger.eChartOutput.coGIF);
+        }
+
+        [TestMethod]
         public void TestSoundSpectrum()
         {
             SelectInfo si = getSelectInfo();

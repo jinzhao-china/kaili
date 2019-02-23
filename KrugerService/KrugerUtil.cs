@@ -60,6 +60,12 @@ namespace KrugerService
             return spectrum;
         }
 
+        public static void GenerateChart(Fan f, String filePath, int width, int height, Kruger.eChartOutput mode)
+        {
+            CentSelect cs = new CentSelect();
+            cs.GenerateChart(f, filePath, width, height, mode);
+        }
+
         public static Spectrum SoundSpectrumEx(Fan f, int speed, bool debug)
         {
             CentSelect cs = new CentSelect();

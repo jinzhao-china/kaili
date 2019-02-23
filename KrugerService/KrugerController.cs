@@ -58,6 +58,48 @@ namespace KrugerService
         }
 
         [HttpPost]
+        public Boolean GenerateChart([FromBody]FanModel model)
+        {
+            Boolean success = true;
+
+            log.Debug("Modle Speed :  " + model.Speed);
+            log.Debug("Modle Debug :  " + model.Debug);
+
+            Fan f = createFan(model);
+            f.SelectInfo = createSelectInfo();
+
+            String basePath = String.IsNullOrEmpty(model.chartPath) ? @".\" : model.chartPath;
+            String fileName = String.IsNullOrEmpty(model.chartName) ? @"tmp" : model.chartName;
+            int chartOutput = model.chartType;
+            String fileExtention = ".jpg";
+            switch (chartOutput)
+            {
+                case 0:
+                    fileExtention = ".gif";
+                    break;
+                case 1:
+                    fileExtention = ".bmp";
+                    break;
+                case 2:
+                    fileExtention = ".wmf";
+                    break;
+                default :
+                    fileExtention = ".jpg";
+                    break;
+            }
+           
+
+            String outputPath = String.Format(@"{0}\{1}{2}",basePath, fileName, fileExtention);
+            log.Debug("file output :  " + outputPath);
+            int width = model.Width == 0 ? 350 : model.Width;
+            int height = model.Height == 0 ? 350 : model.Height;
+
+            KrugerUtil.GenerateChart(f, outputPath, width, height, Kruger.eChartOutput.coGIF);
+            
+            return success;
+        }
+
+        [HttpPost]
         public CurveModel CurvePoints([FromBody]FanModel model)
         {
             CurveModel outModel = new CurveModel();

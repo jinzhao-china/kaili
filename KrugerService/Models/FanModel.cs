@@ -8,6 +8,12 @@ namespace KrugerService.Models
 {
     public sealed class FanModel
     {
+        public string chartPath { get; set; }
+        public string chartName { get; set; }
+        public int chartType { get; set; }
+        public int Height { get; set; }
+        public int Width { get; set; }
+
         public bool Debug { get; set; }
         public float AirVelocity { get; set; }
 

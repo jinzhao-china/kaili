@@ -1,14 +1,7 @@
-﻿using Kruger;
+﻿
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Runtime.InteropServices;
 using System.ServiceProcess;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Web.Http;
 
 namespace RestAPIHost
 {
@@ -52,10 +45,10 @@ namespace RestAPIHost
 
                 ServiceHelper.RunCMD(cmd);
                 // StartLable:
-                // Console.WriteLine("请选择你要执行的操作——1：自动部署服务，2：安装服务，3：卸载服务，4：验证服务状态，5：退出");
-                //Console.WriteLine("————————————————————");
-                //ConsoleKey key = Console.ReadKey().Key;
-                ConsoleKey key = ConsoleKey.NumPad1;
+                Console.WriteLine("请选择你要执行的操作——1：自动部署服务，2：安装服务，3：卸载服务，4：验证服务状态，5：退出");
+                Console.WriteLine("————————————————————");
+                ConsoleKey key = Console.ReadKey().Key;
+                //ConsoleKey key = ConsoleKey.NumPad1;
 
                 if (key == ConsoleKey.NumPad1 || key == ConsoleKey.D1)
                 {
