@@ -7,7 +7,7 @@ namespace RestAPIHost
 {
     class Program
     {
-        private const string SERVICE_NAME = "REST API Server";
+        private static string SERVICE_NAME = "REST API Server";
         private static log4net.ILog log = log4net.LogManager.GetLogger(typeof(Program));
 
         static void Main(string[] args)
@@ -27,8 +27,21 @@ namespace RestAPIHost
             //不带参启动配置程序
             else
             {
+                String port = System.Configuration.ConfigurationSettings.AppSettings["Port"];
+                if (String.IsNullOrEmpty(port))
+                {
+                    port = "60064";
+                }
+
+                String serviceName = System.Configuration.ConfigurationSettings.AppSettings["ServiceName"];
+
+                if (!String.IsNullOrEmpty(serviceName))
+                {
+                    SERVICE_NAME = serviceName;
+                }
+
                 String userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-                String cmd = String.Format("netsh http add urlacl url={0}  user={1}", "http://+:60064/", userName);
+                String cmd = String.Format("netsh http add urlacl url=http://+:{0}/  user={1}", port, userName);
                 //grant permission
                 ServiceHelper.RunCMD(cmd);
 
@@ -108,26 +121,5 @@ namespace RestAPIHost
                 }
             }
         }
-
-        //static void Main(string[] args)
-        //{
-        //    Uri _baseAddress = new Uri("http://localhost:60064/");
-        //    HttpSelfHostServer server = null;
-
-        //    HttpSelfHostConfiguration config = new HttpSelfHostConfiguration(_baseAddress);
-
-        //    config.Routes.MapHttpRoute(
-        //        name: "ActionApi",
-        //        routeTemplate: "api/{controller}/{action}/{id}",
-        //        defaults: new { id = RouteParameter.Optional }
-        //    );
-
-
-        //    server = new HttpSelfHostServer(config);
-
-        //    server.OpenAsync().Wait();
-        //    Console.Read();
-        //}
-
     }
 }

@@ -142,89 +142,89 @@ namespace KrugerService
 
             fan.DimC = f.DimC;
 
-            fan.DimD = f.DimD;
+            //fan.DimD = f.DimD;
 
-            fan.DimE = f.DimE;
+            //fan.DimE = f.DimE;
 
-            fan.DimF = f.DimF;
+            //fan.DimF = f.DimF;
 
-            fan.DimF1 = f.DimF1;
+            //fan.DimF1 = f.DimF1;
 
-            fan.DimF2 = f.DimF2;
+            //fan.DimF2 = f.DimF2;
 
             fan.DimG = f.DimG;
 
-            fan.DimH = f.DimH;
+            //fan.DimH = f.DimH;
 
-            fan.DimH1 = f.DimH1;
+            //fan.DimH1 = f.DimH1;
 
-            fan.DimH2 = f.DimH2;
+            //fan.DimH2 = f.DimH2;
 
-            fan.DimH3 = f.DimH3;
+            //fan.DimH3 = f.DimH3;
 
-            fan.DimI = f.DimI;
+            //fan.DimI = f.DimI;
 
             fan.DimJ = f.DimJ;
 
             fan.DimK = f.DimK;
 
-            fan.DimL = f.DimL;
+            //fan.DimL = f.DimL;
 
-            fan.DimM = f.DimM;
+            //fan.DimM = f.DimM;
 
-            fan.DimN = f.DimN;
+            //fan.DimN = f.DimN;
 
-            fan.DimN1 = f.DimN1;
+            //fan.DimN1 = f.DimN1;
 
-            fan.DimN2 = f.DimN2;
+            //fan.DimN2 = f.DimN2;
 
-            fan.DimNxS = f.DimNxS;
+            //fan.DimNxS = f.DimNxS;
 
-            fan.DimO = f.DimO;
+            //fan.DimO = f.DimO;
 
-            fan.DimOD = f.DimOD;
+            //fan.DimOD = f.DimOD;
 
             fan.DimP = f.DimP;
 
-            fan.DimPhi = f.DimPhi;
+            //fan.DimPhi = f.DimPhi;
 
             fan.DimQ = f.DimQ;
 
             fan.DimR = f.DimR;
 
-            fan.DimS = f.DimS;
+            //fan.DimS = f.DimS;
 
-            fan.DimSetCentres = f.DimSetCentres;
+            //fan.DimSetCentres = f.DimSetCentres;
 
-            fan.DimSetHeight = f.DimSetHeight;
+            //fan.DimSetHeight = f.DimSetHeight;
 
-            fan.DimSetLength = f.DimSetLength;
+            //fan.DimSetLength = f.DimSetLength;
 
-            fan.DimSetWidth = f.DimSetWidth;
+            //fan.DimSetWidth = f.DimSetWidth;
 
-            fan.DimT = f.DimT;
+            //fan.DimT = f.DimT;
 
-            fan.DimT1m = f.DimT1m;
+            //fan.DimT1m = f.DimT1m;
 
-            fan.DimTm = f.DimTm;
+            //fan.DimTm = f.DimTm;
 
-            fan.DimUxS = f.DimUxS;
+            //fan.DimUxS = f.DimUxS;
 
-            fan.DimV = f.DimV;
+            //fan.DimV = f.DimV;
 
-            fan.DimV1 = f.DimV1;
+            //fan.DimV1 = f.DimV1;
 
-            fan.DimV2 = f.DimV2;
+            //fan.DimV2 = f.DimV2;
 
-            fan.DimW = f.DimW;
+            //fan.DimW = f.DimW;
 
-            fan.DimX = f.DimX;
+            //fan.DimX = f.DimX;
 
-            fan.DimY = f.DimY;
+            //fan.DimY = f.DimY;
 
-            fan.DimZ = f.DimZ;
+            //fan.DimZ = f.DimZ;
 
-            fan.Drawing = f.Drawing;
+            //fan.Drawing = f.Drawing;
 
             fan.DrivenPower = f.DrivenPower;
 
@@ -390,89 +390,89 @@ namespace KrugerService
 
             fan.DimC = f.DimC;
 
-            fan.DimD = f.DimD;
+            //fan.DimD = f.DimD;
 
-            fan.DimE = f.DimE;
+            //fan.DimE = f.DimE;
 
-            fan.DimF = f.DimF;
+            //fan.DimF = f.DimF;
 
-            fan.DimF1 = f.DimF1;
+            //fan.DimF1 = f.DimF1;
 
-            fan.DimF2 = f.DimF2;
+            //fan.DimF2 = f.DimF2;
 
             fan.DimG = f.DimG;
 
-            fan.DimH = f.DimH;
+            //fan.DimH = f.DimH;
 
-            fan.DimH1 = f.DimH1;
+            //fan.DimH1 = f.DimH1;
 
-            fan.DimH2 = f.DimH2;
+            //fan.DimH2 = f.DimH2;
 
-            fan.DimH3 = f.DimH3;
+            //fan.DimH3 = f.DimH3;
 
-            fan.DimI = f.DimI;
+            //fan.DimI = f.DimI;
 
             fan.DimJ = f.DimJ;
 
             fan.DimK = f.DimK;
 
-            fan.DimL = f.DimL;
+            //fan.DimL = f.DimL;
 
             fan.DimM = f.DimM;
 
-            fan.DimN = f.DimN;
+            //fan.DimN = f.DimN;
 
-            fan.DimN1 = f.DimN1;
+            //fan.DimN1 = f.DimN1;
 
-            fan.DimN2 = f.DimN2;
+            //fan.DimN2 = f.DimN2;
 
-            fan.DimNxS = f.DimNxS;
+            //fan.DimNxS = f.DimNxS;
 
-            fan.DimO = f.DimO;
+            //fan.DimO = f.DimO;
 
-            fan.DimOD = f.DimOD;
+            //fan.DimOD = f.DimOD;
 
             fan.DimP = f.DimP;
 
-            fan.DimPhi = f.DimPhi;
+            //fan.DimPhi = f.DimPhi;
 
             fan.DimQ = f.DimQ;
 
             fan.DimR = f.DimR;
 
-            fan.DimS = f.DimS;
+            //fan.DimS = f.DimS;
 
-            fan.DimSetCentres = f.DimSetCentres;
+            //fan.DimSetCentres = f.DimSetCentres;
 
-            fan.DimSetHeight = f.DimSetHeight;
+            //fan.DimSetHeight = f.DimSetHeight;
 
-            fan.DimSetLength = f.DimSetLength;
+            //fan.DimSetLength = f.DimSetLength;
 
-            fan.DimSetWidth = f.DimSetWidth;
+            //fan.DimSetWidth = f.DimSetWidth;
 
-            fan.DimT = f.DimT;
+            //fan.DimT = f.DimT;
 
-            fan.DimT1m = f.DimT1m;
+            //fan.DimT1m = f.DimT1m;
 
-            fan.DimTm = f.DimTm;
+            //fan.DimTm = f.DimTm;
 
-            fan.DimUxS = f.DimUxS;
+            //fan.DimUxS = f.DimUxS;
 
-            fan.DimV = f.DimV;
+            //fan.DimV = f.DimV;
 
-            fan.DimV1 = f.DimV1;
+            //fan.DimV1 = f.DimV1;
 
-            fan.DimV2 = f.DimV2;
+            //fan.DimV2 = f.DimV2;
 
-            fan.DimW = f.DimW;
+            //fan.DimW = f.DimW;
 
-            fan.DimX = f.DimX;
+            //fan.DimX = f.DimX;
 
-            fan.DimY = f.DimY;
+            //fan.DimY = f.DimY;
 
-            fan.DimZ = f.DimZ;
+            //fan.DimZ = f.DimZ;
 
-            fan.Drawing = f.Drawing;
+            //fan.Drawing = f.Drawing;
 
             fan.DrivenPower = f.DrivenPower;
 
